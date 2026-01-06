@@ -1,0 +1,19 @@
+{
+    "name": "gpt-auto-bot",
+    "version": "1.0.0",
+    "description": "Auto-reply GPT Bot",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@whiskeysockets/baileys": "^6.7.18",
+        "axios": "^1.6.0",
+        "chalk": "^4.1.2",
+        "pino": "^7.0.0",
+        "fs-extra": "^10.0.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
