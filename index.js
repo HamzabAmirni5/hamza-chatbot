@@ -89,6 +89,9 @@ async function startBot() {
 
                 if (!body) continue;
 
+                // Ignore Status Updates and Newsletters
+                if (msg.key.remoteJid === 'status@broadcast' || msg.key.remoteJid.includes('@newsletter')) continue;
+
                 console.log(chalk.cyan(`Thinking response for: ${body.substring(0, 30)}...`));
 
                 // Send "typing..." status
